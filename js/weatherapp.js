@@ -21,7 +21,12 @@ var locInput = "Houston"
     feels.textContent = `Feels Like: ${feels1.toString()}\u00B0`
     winds.textContent = `Wind Speed: ${winds1} mph`
 
+    
 
-    // let div = document.querySelector('div');
+    if (temp1 > 80){
+        var image = document.getElementById("image")
+        image.src="images/hot.png"
+    }
+    
 
     })
