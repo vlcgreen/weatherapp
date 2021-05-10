@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+<style></style>
+<link rel="stylesheet" href="css/weathercss.css"><link>
+</head> 
+<!-- THIS IS THE START OF MY SITE TEST -->
+
+<header class="header" id="top">
+    <div class="container-width">
+      <div class="lead-title" id="title-a">Find the Weather for Any City!</div>
+    </div>
+    <form class="form" id="form-main">
+      <div class="form-group" id="formdiv">
+        <label class="label" id="cityname">City, State</label>
+        <input placeholder="Type the city and state here" class="input" id="cityinput"/>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="button" id="sendbutton" onclick="getLoc()">Send</button>
+      </div>
+    </form>
+  </header>
+  <!-- End of header  -->
+
+  <section class="main-sect">
+    <div class="container-width" id="bottomcont">
+
+      <div class="main-title" id="weatherapp">WeatherApp
+
+      </div>
+      <div class="main-desc" id="desc">Three-Day Forecast
+      </div>
+
+      <div class="weatherdays" id="forecast">
+
+        <div class="outsidedays" id="days">
+          <div class="each-sec secbgc">
+            <div class="sec-title">Today's Weather 1 </div>
+            <img id="image" src="//placehold.it/350x250/78c5d6/fff/image1.jpg"/>
+            <div class="weather-el"> Temp: </div>
+            <div class="weather-el"> Feels Like: </div>
+            <div class="weather-el"> Clouds: </div>
+          </div>
+        </div>
+
+        <div class="outsidedays" id="days">
+            <div class="each-sec secbgc">
+              <div class="sec-title">Today's Weather 2 </div>
+              <img id="image" src="//placehold.it/350x250/78c5d6/fff/image1.jpg"/>
+              <div class="weather-el"> Temp: </div>
+              <div class="weather-el"> Feels Like: </div>
+              <div class="weather-el"> Clouds: </div>
+            </div>
+          </div>
+
+          <div class="outsidedays" id="days">
+            <div class="each-sec secbgc">
+              <div class="sec-title">Today's Weather 3 </div>
+              <img id="image" src="//placehold.it/350x250/78c5d6/fff/image1.jpg"/>
+              <div class="weather-el"> Temp: </div>
+              <div class="weather-el"> Feels Like: </div>
+              <div class="weather-el"> Clouds: </div>
+            </div>
+          </div>
+
+
+
+      </div>
+
+    </div>
+  </section>
+    <script src=js/api.js></script>
+    <script src="js/weatherapp.js"></script>
+</body>
+
+</html>

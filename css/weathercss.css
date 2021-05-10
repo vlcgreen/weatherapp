@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  .header{
+    padding-top:35px;
+    padding-bottom:50px;
+    color:#ffffff;
+    font-family:Helvetica, serif;
+    font-weight:100;
+  }
+  .container-width{
+    width:90%;
+    max-width:1150px;
+    margin:0 auto;
+  }
+  .menu{
+    float:right;
+    width:50%;
+  }
+  .lead-title{
+    margin:150px 0 30px 0;
+    font-size:40px;
+  }
+  .main-sect{
+    padding-top:100px;
+    padding-bottom:100px;
+    background-color:#222222;
+    font-family:Helvetica, serif;
+    background-image:linear-gradient(white,#d9dbec,#8a8fb6, #3c458f, #121a64, #050b42);
+  }
+  .main-title{
+    color:#fff;
+    font-size:25px;
+    text-align:center;
+    margin-bottom:15px;
+  }
+  .main-desc{
+    color:#b1b1b1;
+    font-size:15px;
+    text-align:center;
+    max-width:700px;
+    margin:0 auto;
+    font-weight:100;
+  }
+  .weatherdays{
+    margin-top:70px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+  }
+  .outsidedays{
+    width:300px;
+    padding:7px;
+    float:left;
+  }
+  .each-sec{
+    margin:0 auto;
+    min-height:350px;
+    background-color:#101280;
+    border-radius:5px;
+    font-weight:100;
+    color:#fff;
+    width:90%;
+  }
+  .sec-title{
+    font-weight:100;
+    letter-spacing:3px;
+    text-align:center;
+    font-size:25px;
+    padding:20px;
+  }
+  .weather-el{
+    color:rgba(255,255,255,0.5);
+    background-color:rgba(0, 0, 0, 0.1);
+    letter-spacing:2px;
+    font-size:15px;
+    padding:10px 20px;
+  }
+  .weather-el:nth-of-type(2n){
+    background-color:transparent;
+  }
+  .secbgc{
+    background-color:#0c20b3;
+  }
+  .form{
+    border-radius:3px;
+    padding:10px 15px;
+    justify-content: center;
+    display: flex;
+  }
+  .input{
+    width:100%;
+    margin-bottom:15px;
+    padding:7px 10px;
+    border-radius:2px;
+    color:#fff;
+    background-color:#554c57;
+    border:none;
+  }
+  .label{
+    width:100%;
+    display:block;
+  }
+  .button{
+    width:100%;
+    margin:15px 0;
+    background-color:#785580;
+    border:none;
+    color:#fff;
+    border-radius:2px;
+    padding:7px 10px;
+    font-size:1em;
+    cursor:pointer;
+  }
+  #title-a{
+    color:#000000;
+    font-weight: bold;
+    font-family: optima;
+    font-size: 60px;
+    align-items:center;
+    align-self:center;
+    justify-content:center;
+    text-align:center;
+  }
+  #top{
+    background-image:url('https://image.freepik.com/free-vector/flat-style-clouds-blue-shades-background_1017-23284.jpg');
+    /* background-repeat:repeat; */
+    background-position:left bottom;
+    background-attachment:scroll;
+    background-size: cover;
+  }
+  #cityinput{
+    width:200px;
+    margin:0 0 15px 10px;
+  }
+  #formdiv{
+    width:240px;
+    margin: 0 0 0 0;
+  }
+  #sendbutton{
+    width:60px;
+    margin:17px 0 15px 10px;
+    background-image:linear-gradient(#474343,#474343);
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+  }
+  #cityname{
+    width:200px;
+    margin:0 0 0 10px;
+    color:#000000;
+    font-weight: bold;
+  }
+  #form-main{
+    width:auto;
+    padding-top: 20px;
+  }
+  #desc{
+    font-size:30px;
+    color:#000000;
+  }
+  #weatherapp{
+    font-size:50px;
+    background-image:linear-gradient(#091a9c,#071688);
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+  }
+  #bottomcont{
+    flex:0 0;
+    background-image:url('https://image.freepik.com/free-vector/weather-pattern_1061-487.jpg');
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+  }
+  #forecast{
+    background-image:url('https://image.freepik.com/free-vector/weather-pattern_1061-487.jpg');
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+  }
+  #days{
+    background-image:none;
+    background-repeat:repeat;
+    background-position:left top;
+    background-attachment:scroll;
+    background-size:auto;
+  }
+  #image{
+    width:258px;
+    height:258px;
+  }
