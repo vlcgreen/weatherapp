@@ -10,13 +10,13 @@
 
 var locInput = document.getElementById("cityinput").value;
     console.log(locInput)
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${locInput}&units=imperial&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${locInput}&units=imperial&appid=${apiKey}`)
     .then(response=>response.json())
     .then(data=>console.log(data))
     
 
 console.log(locInput)
-// fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${locInput}&units=imperial&appid=${apiKey}`)
+// fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${locInput}&units=imperial&appid=${apiKey}`)
 // .then(response=>response.json())
 // .then(data=>{
 //     console.log(data);
