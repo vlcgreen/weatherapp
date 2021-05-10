@@ -1,33 +1,25 @@
 
 
-//api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-//http://api.openweathermap.org/data/2.5/weather?q=Kingwood&appid=${apiKey}
+// var locInput = document.getElementById("cityinput").value;
+//     console.log(locInput)
+var locInput = "Houston"
 
-
-
-
-//https://api.openweathermap.org/data/2.5/onecall?Houston&exclude=minutely,hourly,alerts,&appid=8376900bd6abe614a433e02fa55182da
-
-var locInput = document.getElementById("cityinput").value;
-    console.log(locInput)
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${locInput}&units=imperial&appid=${apiKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${locInput}&units=imperial&appid=${apiKey}`)
     .then(response=>response.json())
-    .then(data=>console.log(data))
-    
+    .then(data=>{
+        console.log(data)
 
-console.log(locInput)
-// fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${locInput}&units=imperial&appid=${apiKey}`)
-// .then(response=>response.json())
-// .then(data=>{
-//     console.log(data);
+    const temp1 = data.main.temp
+    const clouds1 = data.weather[0].description
 
+    let temp = document.getElementById("temp1")
+    let feels = document.getElementById("feels1")
+    let clouds = document.getElementById("clouds1")
 
-    // let degF = data.main.temp;
-    // console.log(degF)
-    // let degC = Math.floor((degF - 32)/1.8);
+    temp.textContent = `Temp: ${temp1.toString()}`
+    clouds.textContent = `Clouds: ${clouds1}`
 
-    // console.log(degC);
 
     // let div = document.querySelector('div');
 
-    // div.textContent = `Current Temp: ${degF.toString()}`
+    })
