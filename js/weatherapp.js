@@ -10,14 +10,16 @@ var locInput = "Houston"
         console.log(data)
 
     const temp1 = data.main.temp
-    const clouds1 = data.weather[0].description
+    const winds1 = data.wind.speed
+    const feels1 = data.main.feels_like
 
     let temp = document.getElementById("temp1")
     let feels = document.getElementById("feels1")
-    let clouds = document.getElementById("clouds1")
+    let winds = document.getElementById("clouds1")
 
-    temp.textContent = `Temp: ${temp1.toString()}`
-    clouds.textContent = `Clouds: ${clouds1}`
+    temp.textContent = `Temp: ${temp1.toString()}\u00B0`
+    feels.textContent = `Feels Like: ${feels1.toString()}\u00B0`
+    winds.textContent = `Wind Speed: ${winds1} mph`
 
 
     // let div = document.querySelector('div');
