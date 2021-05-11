@@ -28,7 +28,7 @@
         }
         else if (temp1 < 70){ 
             var image =document.getElementById('image') 
-            image.src= ""
+            image.src= "https://img.pngio.com/cold-cool-forecast-frost-snowflake-temperature-thermometer-cool-weather-png-512_512.png"
         }
         
     
