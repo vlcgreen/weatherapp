@@ -26,11 +26,14 @@
             var image = document.getElementById("image")
             image.src="images/hot.png"
         }
-        else if (temp1 < 65){ 
+        else if (temp1 <= 65){ 
             var image =document.getElementById('image') 
             image.src= "https://img.pngio.com/cold-cool-forecast-frost-snowflake-temperature-thermometer-cool-weather-png-512_512.png"
         }
-        else
+        else if (temp1 <=79 && temp1 >= 66){
+            var image =document.getElementById('image') 
+            image.src= "images/sunny.png"
+        }
         
     
         })
